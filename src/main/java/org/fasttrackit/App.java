@@ -6,7 +6,7 @@ import java.util.Scanner;
  * Hello world!
  *
  */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
@@ -16,6 +16,8 @@ public class App
         String yourname = scanner.nextLine();
 
         System.out.println("Entered name: " + yourname);
+        Guy guy = new Guy();
+        guy.yourname = "George";
 
         System.out.println("Hello, " + yourname +" ,nice meeting you");
 

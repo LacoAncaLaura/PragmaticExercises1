@@ -1,5 +1,7 @@
 package org.fasttrackit.inputprocessingoutput;
 
+import org.fasttrackit.Guy;
+
 import java.util.Scanner;
 
 public class SayingHello {
@@ -10,7 +12,8 @@ public class SayingHello {
         String yourname = scanner.nextLine();
 
         System.out.println("Entered name: " + yourname);
+        System.out.println();
 
-        System.out.println("Hello, " + yourname +" ,nice meeting you");
+        System.out.println("Hello, " + yourname +" ,nice meeting you!");
     }
 }
