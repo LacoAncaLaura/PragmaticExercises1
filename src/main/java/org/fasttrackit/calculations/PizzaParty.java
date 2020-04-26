@@ -23,7 +23,7 @@ public class PizzaParty {
                 }
             }
         }catch (InputMismatchException e){
-            throw new RuntimeException("Please enter a number.");
+            throw new RuntimeException("Please enter a valid number.");
         }
     }
 }
