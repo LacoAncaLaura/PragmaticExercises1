@@ -10,9 +10,8 @@ public class CountingTheNumberOfCharacters {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a word below:");
         String homer = scanner.nextLine();
-        String letters = new String(homer);
         System.out.println("What is in the input string? " + homer);
-        System.out.println(homer + " has " + letters.length() + " characters.");
+        System.out.println(homer + " has " + homer.length() + " characters.");
 
 
     }
