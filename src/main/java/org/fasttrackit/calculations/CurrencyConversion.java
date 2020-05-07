@@ -11,7 +11,7 @@ public class CurrencyConversion {
         int euros = scanner.nextInt();
         System.out.println("Exchange rate: ");
         double exchangeRate = scanner.nextDouble();
-        double dollars = euros * exchangeRate;
+        double dollars = euros * exchangeRate/100;
         System.out.println(euros + " euros at an exchange rate of " + exchangeRate + " is "
          + dollars + " U.S. dollars.");
 
