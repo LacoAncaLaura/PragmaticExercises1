@@ -20,9 +20,10 @@ public class DeterminingCompoundInterest {
             System.out.println("What is the number of times the interest is compounded per year?");
             int compound = scanner.nextInt();
             int interestCompound = years * compound;
-            double PR = principal + rate;
-            double totalInvestment = PR * interestCompound;
-            System.out.println("$" + principal + " invested at " + interest + "% for " + years + " years, compounded " + compound + " times per year is $" + totalInvestment );
+//            double PR = principal + rate;
+            double totalInvestment = rate * interestCompound;
+            double PR = principal + totalInvestment;
+            System.out.println("$" + principal + " invested at " + interest + "% for " + years + " years, compounded " + compound + " times per year is $" + PR );
         }catch (InputMismatchException e){
             throw new RuntimeException("Please enter a valid number.");
         }
