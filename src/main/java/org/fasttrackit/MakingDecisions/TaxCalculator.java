@@ -9,11 +9,11 @@ public class TaxCalculator {
         int orderAmount = scanner.nextInt();
         System.out.println("What is the state?");
         String state = scanner.nextLine();
-        if (scanner.nextLine() == "WI") {
+        if (scanner.nextLine().equals("WI")) {
             double tax = 0.55;
             double total = tax + orderAmount;
             System.out.println(state + "\nThe subtotal is " + orderAmount + "\nThe tax is $" + tax + "\nThe total is $" + total);
-        }if (scanner.nextLine() == "MN"){
+        }if (scanner.nextLine().equals("MN")){
             System.out.println(state + "\nThe subtotal is " + orderAmount  + "\nThe total is $" + orderAmount);
 
         }
