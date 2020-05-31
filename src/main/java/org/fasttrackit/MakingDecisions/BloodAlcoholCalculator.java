@@ -12,7 +12,6 @@ public class BloodAlcoholCalculator {
             System.out.println("Please enter your weight: ");
             int weight = scanner.nextInt();
             System.out.println("Please enter your gender: ");
-//                    "\nTRUE -> female \nFALSE -> man \n(no offence) ");
             String gender = scanner.nextLine();
             String Female = scanner.nextLine() ;
             String Male = scanner.nextLine();
@@ -20,14 +19,14 @@ public class BloodAlcoholCalculator {
             int drinks = scanner.nextInt();
             System.out.println("When you had the last drink? \n(In hours,please)");
             int numberOfH = scanner.nextInt();
-            if (gender.equals(Female)) {
+            if (gender.equalsIgnoreCase(Female)) {
                 double first = drinks * 5.14;
                 double fe = weight * 0.66;
                 double second = first / fe;
                 double third = 0.015 * numberOfH;
                 double BAC = second - third;
                 System.out.println("Your BAC is " + BAC + " and it`s not legal to drive.");
-            } else if (gender.equals(Male)) {
+            }if (gender.equalsIgnoreCase(Male)) {
                 double first1 = drinks * 5.14;
                 double fe = weight * 0.73;
                 double second = first1 / fe;
